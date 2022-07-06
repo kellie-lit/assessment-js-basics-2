@@ -84,8 +84,8 @@ const pizza = [
 */
 
 //CODE HERE
-//const popularity = pizza
-//console.log(pizza[0].popularity);
+
+console.log(pizza.popularity);
 
 // running as undefined
 /*
@@ -96,8 +96,8 @@ const pizza = [
 */
 
 //CODE HERE
-//const tags = pizza;
-//console.log(pizza[1].tags)
+
+console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -107,7 +107,7 @@ const pizza = [
 */
 
 //CODE HERE RUNNING AS UNDEFINED
-const price = pizza.price;
+const  {price}= pizza
 console.log(price);
 
 /*
@@ -195,7 +195,7 @@ console.log(foodArr);
 //CODE HERE
 
 const filteredFood = foodArr.filter((item) => {
-  return item.category.includes(`cooked well`);
+  return item.category.includes(`kids`);
 });
 
 //////////////////PROBLEM 5////////////////////
@@ -257,4 +257,4 @@ function filterByProperty(property, number, type) {
 
 //CODE HERE
 
-//console.log(filterByProperty(`price`, 11, `above`))
+console.log(filterByProperty(`popularity`, 7, `above`))

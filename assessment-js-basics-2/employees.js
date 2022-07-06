@@ -98,13 +98,12 @@ empTwo.getSchedule();
 class Manager extends Employee{
     constructor(name, shifts, employees){
         super(name,shifts);
-        this.getEmployees = employees;
+        this.employees = employees;
     }
-    addEmployee(emp) {
-        console.log(`${this.name} manages ${this.employees}`);
+    getEmployees = () => console.log(`${this.name} manages ${this.employees}`)
     }
-};
 
+    addEmployee = emp => this.employees.push(emp)
 
 
 /*
